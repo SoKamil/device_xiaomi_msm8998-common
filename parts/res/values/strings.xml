@@ -62,6 +62,11 @@
     <string name="fastcharge_summary">Enable to use fastcharge when connected to an computer USB 3.X</string>
 	
 	    <!-- Dirac settings -->
+    <string name="sound_title">Sound</string>    
+
+    <string name="mi_sound_title">Mi Sound</string>
+    <string name="mi_sound_summary">Xiaomi Dirac Audio Settings</string>
+
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_headset_title">Headset type</string>
     <string name="dirac_preset_title">Sound preset</string>

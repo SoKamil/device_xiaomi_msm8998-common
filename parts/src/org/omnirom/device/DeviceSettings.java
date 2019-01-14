@@ -82,6 +82,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private SwitchPreference mEnableHAL3;
     private ListPreference mS2S;
     private Preference mKcalPref;
+    private Preference mDiracPref;
     private ListPreference mSPECTRUM;
     private SwitchPreference mButtonSwap;
     private PreferenceCategory mHWButtons;
@@ -103,6 +104,16 @@ public class DeviceSettings extends PreferenceFragment implements
                 return true;
             }
         });
+        
+         mDiracPref = findPreference("dirac");
+         mDiracPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(getContext(), org.omnirom.device.dirac.DiracActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });       
 
         mEnableHAL3 = (SwitchPreference) findPreference(ENABLE_HAL3_KEY);
         mEnableHAL3.setChecked(SystemProperties.getBoolean(HAL3_SYSTEM_PROPERTY, false));

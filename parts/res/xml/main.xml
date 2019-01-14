@@ -104,4 +104,12 @@
             android:summary="@string/fastcharge_summary"
             android:icon="@drawable/ic_usb_fastcharge" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/sound_title">    
+        <PreferenceScreen
+                 android:key="dirac"
+                 android:summary="@string/mi_sound_summary"
+                 android:title="@string/mi_sound_title" />
+    </PreferenceCategory>                 
 </PreferenceScreen>
