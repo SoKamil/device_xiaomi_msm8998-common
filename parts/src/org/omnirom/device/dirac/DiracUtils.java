@@ -41,7 +41,11 @@ public final class DiracUtils {
     }
 
     protected static boolean isDiracEnabled(Context context) {
-        return mDiracSound.getMusic() == 1;
+        Integer value = mDiracSound.getMusic();
+        if (value != null) 
+            return mDiracSound.getMusic() == 1;
+        setMusic(true);
+        return true;
     }
 
     protected static void setLevel(String preset) {
