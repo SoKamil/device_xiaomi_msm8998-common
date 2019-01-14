@@ -4,6 +4,11 @@ vendor/lib/soundfx/libqcbassboost.so|c4527fdcd3cd322cd91b03af10051b54d6c762a1
 vendor/lib/soundfx/libqcreverb.so|62bbe448996c769533210647a8df9baed5273e97
 vendor/lib/soundfx/libqcvirt.so|618403f5b50baffd525c430fdd916172d9e5b849
 
+# Audio dirac
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # Bluetooth - from OnePlus5T PKQ1.180716.001
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9f0bbbbc45cd57eed0175c1ff06b83473ea5c392
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
